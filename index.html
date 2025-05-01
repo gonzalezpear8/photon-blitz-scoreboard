@@ -24,17 +24,24 @@
 
     /* General reset and theme */
     * { box-sizing: border-box; }
+    /* html, body {
+      height: 100%;
+    } */
+
 
     body {
       font-family: 'Orbitron', sans-serif;
       background: linear-gradient(to bottom right, #010518, #2e84e1);
       color: #ffffff;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .logo {
@@ -48,7 +55,7 @@
       width: 100%;
       max-width: 900px;
       padding: 20px;
-      margin: 0 auto 20px auto;
+      margin: 40px auto 20px auto;
       border: 3px solid rgb(93, 195, 242);
       border-radius: 15px;
       box-shadow: 0 0 15px #000000, 0 0 30px #00ffff inset;
